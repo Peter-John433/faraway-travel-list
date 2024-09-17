@@ -7,6 +7,7 @@ const initialItems = [
 export default function App() {
   return (
     <div className="app">
+      <h1>my travel list project</h1>
       <Logo />
       <Form />
       <PackageList />
