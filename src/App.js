@@ -10,6 +10,7 @@ export default function App() {
       {/* <Steps /> */}
       <hr />
       <Counter />
+      <Counter />
       <hr />
       <FarAway />
     </div>
