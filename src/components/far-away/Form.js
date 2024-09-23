@@ -1,7 +1,8 @@
 import { useState } from "react";
-export default function Form() {
+export default function Form({ onAddItem }) {
   const [description, setDescription] = useState("");
   const [quantity, setQuantity] = useState(1);
+
   function handleSubmit(e) {
     e.preventDefault();
     if (!description) return alert("please add an item");
@@ -13,6 +14,8 @@ export default function Form() {
       id: Math.random(),
     };
     console.log(newItem);
+
+    onAddItem(newItem);
 
     setDescription("");
     setQuantity(1);
