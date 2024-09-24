@@ -16,3 +16,31 @@
   padding: 2px 5px;
   border-radius: 50%;
 }
+
+.accordion-item {
+  background-color: green;
+  color: white;
+  padding: px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  box-shadow: 1px 1px 3px red;
+  padding-left: 5px;
+  padding-right: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.my-accord {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  /* font-size: 20px; */
+}
+
+.text {
+  font-size: 18px;
+  color: yellow;
+  text-align: center;
+}

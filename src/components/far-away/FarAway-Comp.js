@@ -24,7 +24,10 @@ export default function FarAway() {
   }
 
   function handleClearList() {
-    setLiftItem([]);
+    const confirmed = window.confirm("are you sure you want to clear list");
+    if (confirmed) {
+      setLiftItem([]);
+    }
   }
 
   return (
@@ -37,7 +40,7 @@ export default function FarAway() {
         handleToggle={handleToggle}
         handleClearList={handleClearList}
       />
-      <Footer />
+      <Footer liftItem={liftItem} />
     </div>
   );
 }
